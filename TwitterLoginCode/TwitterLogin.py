@@ -7,6 +7,7 @@ from sqlalchemy.orm import scoped_session, sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 
 # Just adding this comment to try git
+# Another comment, trying to figure something out
 
 # configuration
 SECRET_KEY = 'development key'
