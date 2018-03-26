@@ -1,3 +1,4 @@
+# issue with certificate stuff likley due to libssh2 and pip
 from flask import Flask, request, redirect, url_for, session, g, flash, \
     render_template
 from flask_oauthlib.client import OAuth
@@ -45,7 +46,8 @@ def get_twitter_token(token=None):
 def index():
     access_token = session.get('access_token')
     if access_token is None:
-        return redirect(url_for('login'))
+        return render_template('index.html')
+        #return redirect(url_for('login')) # potentially need to make this go to the index page first, then once login button is pressed redirect to login.
 
     access_token = access_token[0]
 
