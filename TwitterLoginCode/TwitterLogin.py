@@ -1,89 +1,94 @@
-# issue with certificate stuff likley due to libssh2 and pip
-from flask import Flask, request, redirect, url_for, session, g, flash, \
-    render_template
+from flask import Flask
+from flask import g, session, request, url_for, flash
+from flask import redirect, render_template
 from flask_oauthlib.client import OAuth
 
-from sqlalchemy import create_engine, Column, Integer, String
-from sqlalchemy.orm import scoped_session, sessionmaker
-from sqlalchemy.ext.declarative import declarative_base
 
-# configuration
-SECRET_KEY = 'development key'
-DEBUG = True
-
-# setup flask
 app = Flask(__name__)
-app.debug = DEBUG
-app.secret_key = SECRET_KEY
-oauth = OAuth()
+app.debug = True
+app.secret_key = 'development'
 
-# Use Twitter as example remote application
-twitter = oauth.remote_app('twitter',
-                           # unless absolute urls are used to make requests, this will be added
-                           # before all URLs.  This is also true for request_token_url and others.
-                           base_url='https://api.twitter.com/1/',
-                           # where flask should look for new request tokens
-                           request_token_url='https://api.twitter.com/oauth/request_token',
-                           # where flask should exchange the token with the remote application
-                           access_token_url='https://api.twitter.com/oauth/access_token',
-                           # twitter knows two authorization URLs.  /authorize and /authenticate.
-                           # they mostly work the same, but for sign on /authenticate is
-                           # expected because this will give the user a slightly different
-                           # user interface on the twitter side.
-                           authorize_url='https://api.twitter.com/oauth/authenticate',
-                           # the consumer keys from the twitter application registry.
-                           consumer_key='hJ9zGTqxqWPyEY3f3KGRajKhS',
-                           consumer_secret='oQ4vXCHlj0Ci8dd4s2up0Muq6Fh2WCZhEebFIYGtElSTAjbLAz'
-                           )
+oauth = OAuth(app)
+
+twitter = oauth.remote_app(
+    'twitter',
+    consumer_key='hJ9zGTqxqWPyEY3f3KGRajKhS',
+    consumer_secret='oQ4vXCHlj0Ci8dd4s2up0Muq6Fh2WCZhEebFIYGtElSTAjbLAz',
+    base_url='https://api.twitter.com/1.1/',
+    request_token_url='https://api.twitter.com/oauth/request_token',
+    access_token_url='https://api.twitter.com/oauth/access_token',
+    authorize_url='https://api.twitter.com/oauth/authorize'
+)
 
 
 @twitter.tokengetter
-def get_twitter_token(token=None):
-    return session.get('twitter_token')
+def get_twitter_token():
+    if 'twitter_oauth' in session:
+        resp = session['twitter_oauth']
+        return resp['oauth_token'], resp['oauth_token_secret']
+
+
+@app.before_request
+def before_request():
+    g.user = None
+    if 'twitter_oauth' in session:
+        g.user = session['twitter_oauth']
 
 
 @app.route('/')
 def index():
-    access_token = session.get('access_token')
-    if access_token is None:
-        return render_template('index.html')
-        #return redirect(url_for('login')) # potentially need to make this go to the index page first, then once login button is pressed redirect to login.
+    tweets = None
+    if g.user is not None:
+        resp = twitter.request('statuses/home_timeline.json')
+        if resp.status == 200:
+            tweets = resp.data
+        else:
+            flash('Unable to load tweets from Twitter.')
+    return render_template('index.html', tweets=tweets)
 
-    access_token = access_token[0]
 
-    return render_template('index.html')
+@app.route('/tweet', methods=['POST'])
+def tweet():
+    if g.user is None:
+        return redirect(url_for('login', next=request.url))
+    status = request.form['tweet']
+    if not status:
+        return redirect(url_for('index'))
+    resp = twitter.post('statuses/update.json', data={
+        'status': status
+    })
+
+    if resp.status == 403:
+        flash("Error: #%d, %s " % (
+            resp.data.get('errors')[0].get('code'),
+            resp.data.get('errors')[0].get('message'))
+        )
+    elif resp.status == 401:
+        flash('Authorization error with Twitter.')
+    else:
+        flash('Successfully tweeted your tweet (ID: #%s)' % resp.data['id'])
+    return redirect(url_for('index'))
 
 
 @app.route('/login')
 def login():
-    return twitter.authorize(callback=url_for('oauth_authorized',
-                                              next=request.args.get('next') or request.referrer or None))
+    callback_url = url_for('oauthorized', next=request.args.get('next'))
+    return twitter.authorize(callback=callback_url or request.referrer or None)
 
 
 @app.route('/logout')
 def logout():
-    session.pop('screen_name', None)
-    flash('You were signed out')
-    return redirect(request.referrer or url_for('index'))
+    session.pop('twitter_oauth', None)
+    return redirect(url_for('index'))
 
 
-@app.route('/oauth-authorized')
-@twitter.authorized_handler
-def oauth_authorized(resp):
-    next_url = request.args.get('next') or url_for('index')
+@app.route('/oauthorized')
+def oauthorized():
+    resp = twitter.authorized_response()
     if resp is None:
-        flash(u'You denied the request to sign in.')
-        return redirect(next_url)
-
-    access_token = resp['oauth_token']
-    session['access_token'] = access_token
-    session['screen_name'] = resp['screen_name']
-
-    session['twitter_token'] = (
-        resp['oauth_token'],
-        resp['oauth_token_secret']
-    )
-
+        flash('You denied the request to sign in.')
+    else:
+        session['twitter_oauth'] = resp
     return redirect(url_for('index'))
 
 
