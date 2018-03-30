@@ -9,8 +9,6 @@
 <ul class=navigation>
   {% if g.user %}
   <li><a href="{{ url_for('logout') }}">sign out [{{ g.user.screen_name}}]</a></li>
-  {% else %}
-  <li><a href="{{ url_for('login') }}">sign in</a></li>
   {% endif %}
 </ul>
 {% for message in get_flashed_messages() %}

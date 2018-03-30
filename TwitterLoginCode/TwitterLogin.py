@@ -2,6 +2,7 @@ from flask import Flask
 from flask import g, session, request, url_for, flash
 from flask import redirect, render_template
 from flask_oauthlib.client import OAuth
+import json
 
 
 app = Flask(__name__)
@@ -45,6 +46,18 @@ def index():
         else:
             flash('Unable to load tweets from Twitter.')
     return render_template('index.html', tweets=tweets)
+
+@app.route('/searchUser', methods = ["POST"])
+def userSearch():
+    if request.method == 'POST':
+        q = request.form.get("query")
+        results = twitter.request('search/tweets.json?q=%s'%(q)).data
+        parsedResults = results['statuses']
+        print(parsedResults)
+        print(parsedResults[2]['text'])
+        return render_template('index.html', search=parsedResults)
+    return render_template('index.html')
+
 
 
 @app.route('/tweet', methods=['POST'])

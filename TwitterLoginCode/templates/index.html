@@ -5,7 +5,25 @@
     <p>
       Hello {{ g.user.screen_name }}!
     </p>
-    </form>
+
+      <form method="POST" action="/searchUser">
+          Search Tweets:<br>
+          <input type="text" name="query">
+          <input type="submit" value="Search"/>
+      </form>
+
+    {% if search %}
+    <h3>Search Results:</h3>
+    <ul>
+    {% for result in search %}
+      <li>id:{{result['id']}}<br>
+          text:{{result['text']}}<br>
+          date:{{result['created_at']}}</li>
+        <br>
+    {% endfor %}
+    </ul>
+    {% endif %}
+
     {% if tweets %}
     <h3>Your Timeline:</h3>
     <ul>
