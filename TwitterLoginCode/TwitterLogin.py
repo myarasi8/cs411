@@ -53,11 +53,10 @@ def userSearch():
         q = request.form.get("query")
         results = twitter.request('search/tweets.json?q=%s'%(q)).data
         parsedResults = results['statuses']
-        print(parsedResults)
-        print(parsedResults[2]['text'])
+        #print(parsedResults)
+        #print(parsedResults[2]['text'])
         return render_template('index.html', search=parsedResults)
     return render_template('index.html')
-
 
 
 @app.route('/tweet', methods=['POST'])
