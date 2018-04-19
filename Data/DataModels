@@ -1,0 +1,14 @@
+This folder holds an ERD diagram representing our current SQL database. 
+Additionally it holds a sequence diagram showing the flow of work from when a user asks for a 
+recommendation to the multiple api calls and caching step that us done unti 
+they receive their relevant recommendations.
+
+Our planned cache implementation:
+After analyzing a user's latest tweets through the IBM Watson API, the app will pair the returned mood
+to an appropriate genre. Our cache implementation occurs here, before calling the 'JustWatch' API to find movies
+relevant to that genre our app will check the data within the SQL database to see if movies relevant to that genre 
+have already been stored. 
+  If so, these relevant movies are retrieved from the database and returned to the user as a recommendation.
+  If not, the app will call the 'JustWatch' API to find the movies relevant to the given genre / mood store 
+    this data in the database, and return the movies to the user as a recommendation.
+(Refer to ERD diagram and Sequence diagram for clarity). 
