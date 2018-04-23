@@ -99,18 +99,19 @@ def result():
     mood = tone_analyzer.tone('I am feeling very sad', content_type="text/plain")
     max_mood = mood.get('document_tone').get('tones')[0].get('tone_name')
     selected = request.form.getlist('check')
+    genre = 'act'
     for i in range(len(selected)):
         if selected[i] == 'Netflix':
             results_by_multiplea = just_watch.search_for_item(
             providers=['nfx'],
-            genres=['act'],
+            genres=[genre],
             content_types=['movie'])
             movies = results_by_multiplea['items']
             for x in range(len(movies)):
                 resultsMovies.append(movies[x])
             results_by_multiplef = just_watch.search_for_item(
                 providers=['nfx'],
-                genres=['act'],
+                genres=[genre],
                 content_types=['show'])
             tv = results_by_multiplef['items']
             for x in range(len(tv)):
@@ -119,13 +120,13 @@ def result():
             results_by_multipleb = just_watch.search_for_item(
             providers=['pls'],
             content_types=['movie'],
-            genres=['act'])
+            genres=[genre])
             movies = results_by_multipleb['items']
             for x in range(len(movies)):
                 resultsMovies.append(movies[x])
             results_by_multiplef = just_watch.search_for_item(
-                providers=['nfx'],
-                genres=['act'],
+                providers=['pls'],
+                genres=[genre],
                 content_types=['show'])
             tv = results_by_multiplef['items']
             for x in range(len(tv)):
@@ -134,13 +135,13 @@ def result():
             results_by_multiplec = just_watch.search_for_item(
             providers=['itu'],
             content_types=['movie'],
-            genres=['act'])
+            genres=[genre])
             movies = results_by_multiplec['items']
             for x in range(len(movies)):
                 resultsMovies.append(movies[x])
             results_by_multiplef = just_watch.search_for_item(
-                providers=['nfx'],
-                genres=['act'],
+                providers=['itu'],
+                genres=[genre],
                 content_types=['show'])
             tv = results_by_multiplef['items']
             for x in range(len(tv)):
@@ -149,13 +150,13 @@ def result():
             results_by_multipled = just_watch.search_for_item(
             providers=['ply'],
             content_types=['movie'],
-            genres=['act'])
+            genres=[genre])
             movies = results_by_multipled['items']
             for x in range(len(movies)):
                 resultsMovies.append(movies[x])
             results_by_multiplef = just_watch.search_for_item(
-                providers=['nfx'],
-                genres=['act'],
+                providers=['ply'],
+                genres=[genre],
                 content_types=['show'])
             tv = results_by_multiplef['items']
             for x in range(len(tv)):
