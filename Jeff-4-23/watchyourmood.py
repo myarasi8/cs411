@@ -17,8 +17,8 @@ oauth = OAuth(app)
 
 twitter = oauth.remote_app(
     'twitter',
-    consumer_key='hJ9zGTqxqWPyEY3f3KGRajKhS',
-    consumer_secret='oQ4vXCHlj0Ci8dd4s2up0Muq6Fh2WCZhEebFIYGtElSTAjbLAz',
+    consumer_key='kRSXMH3EyQDo06EDjYtJ12KON',
+    consumer_secret='msxut84GDA7jLsjLi0uVIYngxVZajTJZYcof8OvdnziscMG7rB',
     base_url='https://api.twitter.com/1.1/',
     request_token_url='https://api.twitter.com/oauth/request_token',
     access_token_url='https://api.twitter.com/oauth/access_token',
@@ -54,6 +54,14 @@ def index():
         else:
             flash('Unable to load tweets from Twitter.')
     return render_template('index.html', tweets=tweets)
+
+def lastTenTweets():
+    tweets = []
+    if g.user is not None:
+        resp = twitter.request('statuses/home_timeline.json')
+        if resp.status == 200:
+            tweets = resp.data
+    return tweets
 
 
 @app.route('/tweet', methods=['POST'])
@@ -93,10 +101,17 @@ def logout():
 
 @app.route('/suggest',methods = ['POST', 'GET'])
 def result():
+    tweet = lastTenTweets()
+    tweets = []
+    for i in range(len(tweet)):
+        tweets.append(tweet[i]['text'])
+    text = ""
+    for i in range(len(tweets)):
+        text += tweets[i]
     just_watch = JustWatch(country='US')
     resultsMovies = []
     resultsTV =[]
-    mood = tone_analyzer.tone('I am feeling very sad', content_type="text/plain")
+    mood = tone_analyzer.tone(text, content_type="text/plain")
     max_mood = mood.get('document_tone').get('tones')[0].get('tone_name')
     selected = request.form.getlist('check')
     genre = 'act'
@@ -163,7 +178,7 @@ def result():
                 resultsTV.append(tv[x])
         results = [resultsMovies[randint(0,len(resultsMovies)-1)], resultsTV[randint(0,len(resultsTV)-1)]]
 
-    return render_template('suggest.html', selected=results, mood=max_mood)
+    return render_template('suggest.html', selected=results, mood=max_mood, tweets=text)
 
 @app.route('/oauthorized')
 def oauthorized():
