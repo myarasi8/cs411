@@ -101,12 +101,14 @@ def logout():
 
 @app.route('/suggest',methods = ['POST', 'GET'])
 def result():
+    moodDict = {"Joy": 'act', "Sadness": 'cmy', "Anger": 'trl', "Fear": 'fnt', "Analytical": 'doc', "Confident": 'hrr', "Tentative": 'rma'}
     tweet = lastTenTweets()
     tweets = []
     for i in range(len(tweet)):
         tweets.append(tweet[i]['text'])
     text = ""
     for i in range(len(tweets)):
+        text += " "
         text += tweets[i]
     just_watch = JustWatch(country='US')
     resultsMovies = []
@@ -114,7 +116,7 @@ def result():
     mood = tone_analyzer.tone(text, content_type="text/plain")
     max_mood = mood.get('document_tone').get('tones')[0].get('tone_name')
     selected = request.form.getlist('check')
-    genre = 'act'
+    genre = moodDict[max_mood]
     for i in range(len(selected)):
         if selected[i] == 'Netflix':
             results_by_multiplea = just_watch.search_for_item(
