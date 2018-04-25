@@ -14,12 +14,12 @@ app = Flask(__name__)
 app.debug = True
 app.secret_key = 'development'
 
-# NEW mysql set up
+# mysql set up
 mysql = MySQL()
-# NEW
+
 app.config['MYSQL_DATABASE_USER'] = 'root'
 # NOTE MUST INSERT YOUR OWN PASSWORD
-app.config['MYSQL_DATABASE_PASSWORD'] = 'Insert your Password'
+app.config['MYSQL_DATABASE_PASSWORD'] = 'RFblu3dud3'
 app.config['MYSQL_DATABASE_DB'] = 'WatchMood'
 app.config['MYSQL_DATABASE_HOST'] = 'localhost'
 mysql.init_app(app)
@@ -149,112 +149,274 @@ def result():
     # Moods = cursor.fetchall()
 
     ## The following code checks the DB for relevant data already being present in the DB
-    #conn = mysql.connect()
-    #cursor = conn.cursor()
-    #if len(selected) ==1:
-    #    query = "SELECT mname, mdescription, sname, sdescription FROM Movies M, Shows S, Providers P, Mood MD WHERE M.mid = MD.mdid AND S.sid = MD.mdid AND MD.mdname = '{0}' AND P.pname='{1}'".format(
-    #        max_mood,selected[0])
-    #    cursor.execute(query)
-    #    cachedResults = cursor.fetchall()
-    #elif len(selected) ==2:
-    #    query = "SELECT mname, mdescription, sname, sdescription FROM Movies M, Shows S, Providers P, Mood MD WHERE M.mid = MD.mdid AND S.sid = MD.mdid AND MD.mdname = '{0}' AND P.pname='{1}' AND P.pname='{2}'".format(
-    #        max_mood, selected[0], selected[1])
-    #    cursor.execute(query)
-    #    cachedResults = cursor.fetchall()
-    #elif len(selected) ==3:
-    #    query = "SELECT mname, mdescription, sname, sdescription FROM Movies M, Shows S, Providers P, Mood MD WHERE M.mid = MD.mdid AND S.sid = MD.mdid AND MD.mdname = '{0}' AND P.pname='{1}' AND P.pname='{2}'" \
-    #            "AND P.pname='{3}'".format(max_mood, selected[0], selected[1], selected[2])
-    #    cursor.execute(query)
-    #    cachedResults = cursor.fetchall()
-    #else:
-    #    query = "SELECT mname, mdescription, sname, sdescription FROM Movies M, Shows S, Providers P, Mood MD WHERE M.mid = MD.mdid AND S.sid = MD.mdid AND MD.mdname = '{0}' AND P.pname='{1}' AND P.pname='{2}' " \
-    #            "AND P.pname='{3}' AND P.pname='{4}'".format(max_mood, selected[0], selected[1], selected[2], selected[3])
-    #    cursor.execute(query)
-    #    cachedResults = cursor.fetchall()
-    # if cachedResults !=()
-    #   render_template('suggest.html', cached=cachedResults, mood=max_mood, tweets=text)
-    # else:
-
+    cachedMovies = searchCachedMovies(selected,genre)
+    cachedShows = searchCachedShows(selected,genre)
+    #print('####################### Cached Movie results:')
+    #print(cachedMovies)
+    if cachedMovies != ():
+        if cachedShows != ():
+            chosenMovie = cachedMovies[randint(0, len(cachedMovies) - 1)]
+            chosenShow = cachedShows[randint(0, len(cachedShows) - 1)]
+            #print('chosen m:', chosenMovie)
+            #print('chosen s:', chosenShow)
+            return render_template('suggest.html', cachedMovie=chosenMovie, cachedShow = chosenShow, mood=max_mood, tweets=text)
+    else:
     # below occurs if no relevant info found within the DB, every result below needs to be put into the DB
+        for i in range(len(selected)):
+            if selected[i] == 'Netflix':
+                results_by_multiplea = just_watch.search_for_item(
+                    providers=['nfx'],
+                    genres=[genre],
+                    content_types=['movie'])
+                movies = results_by_multiplea['items']
+                for x in range(len(movies)):
+                    storeMovie(movies[x]['title'],movies[x]['short_description'],genre)
+                    linkMovieProvider(movies[x]['title'],'Netflix')
+                    resultsMovies.append(movies[x])
+                results_by_multiplef = just_watch.search_for_item(
+                    providers=['nfx'],
+                    genres=[genre],
+                    content_types=['show'])
+                tv = results_by_multiplef['items']
+                for x in range(len(tv)):
+                    # add movie[x]['title'] movie[x]['short_description'] to database
+                    storeShow(movies[x]['title'], movies[x]['short_description'], genre)
+                    linkShowProvider(movies[x]['title'], 'Netflix')
+                    resultsTV.append(tv[x])
 
-    for i in range(len(selected)):
-        if selected[i] == 'Netflix':
-            results_by_multiplea = just_watch.search_for_item(
-                providers=['nfx'],
-                genres=[genre],
-                content_types=['movie'])
-            movies = results_by_multiplea['items']
-            for x in range(len(movies)):
-                resultsMovies.append(movies[x])
-                # add movie[x]['title'] movie[x]['short_description'] to database
-            results_by_multiplef = just_watch.search_for_item(
-                providers=['nfx'],
-                genres=[genre],
-                content_types=['show'])
-            tv = results_by_multiplef['items']
-            for x in range(len(tv)):
-                # add movie[x]['title'] movie[x]['short_description'] to database
-                resultsTV.append(tv[x])
+            if selected[i] == 'Playstation Video':
+                results_by_multipleb = just_watch.search_for_item(
+                    providers=['pls'],
+                    content_types=['movie'],
+                    genres=[genre])
+                movies = results_by_multipleb['items']
+                for x in range(len(movies)):
+                    storeMovie(movies[x]['title'], movies[x]['short_description'], genre)
+                    linkMovieProvider(movies[x]['title'], 'Playstation Video')
+                    resultsMovies.append(movies[x])
+                results_by_multiplef = just_watch.search_for_item(
+                    providers=['pls'],
+                    genres=[genre],
+                    content_types=['show'])
+                tv = results_by_multiplef['items']
+                for x in range(len(tv)):
+                    storeShow(movies[x]['title'], movies[x]['short_description'], genre)
+                    linkShowProvider(movies[x]['title'], 'Playstation Video')
+                    resultsTV.append(tv[x])
 
+            if selected[i] == 'Itunes':
+                results_by_multiplec = just_watch.search_for_item(
+                    providers=['itu'],
+                    content_types=['movie'],
+                    genres=[genre])
+                movies = results_by_multiplec['items']
+                for x in range(len(movies)):
+                    storeMovie(movies[x]['title'], movies[x]['short_description'], genre)
+                    linkMovieProvider(movies[x]['title'], 'Itunes')
+                    resultsMovies.append(movies[x])
+                results_by_multiplef = just_watch.search_for_item(
+                    providers=['itu'],
+                    genres=[genre],
+                    content_types=['show'])
+                tv = results_by_multiplef['items']
+                for x in range(len(tv)):
+                    storeShow(movies[x]['title'], movies[x]['short_description'], genre)
+                    linkShowProvider(movies[x]['title'], 'Itunes')
+                    resultsTV.append(tv[x])
 
-        if selected[i] == 'Playstation Video':
-            results_by_multipleb = just_watch.search_for_item(
-                providers=['pls'],
-                content_types=['movie'],
-                genres=[genre])
-            movies = results_by_multipleb['items']
-            for x in range(len(movies)):
-                resultsMovies.append(movies[x])
+            if selected[i] == 'Google Play':
+                results_by_multipled = just_watch.search_for_item(
+                    providers=['ply'],
+                    content_types=['movie'],
+                    genres=[genre])
+                movies = results_by_multipled['items']
+                for x in range(len(movies)):
+                    storeMovie(movies[x]['title'], movies[x]['short_description'], genre)
+                    linkMovieProvider(movies[x]['title'], 'Google Play')
+                    resultsMovies.append(movies[x])
+                results_by_multiplef = just_watch.search_for_item(
+                    providers=['ply'],
+                    genres=[genre],
+                    content_types=['show'])
+                tv = results_by_multiplef['items']
+                for x in range(len(tv)):
+                    storeShow(movies[x]['title'], movies[x]['short_description'], genre)
+                    linkShowProvider(movies[x]['title'], 'Google Play')
+                    resultsTV.append(tv[x])
 
-            results_by_multiplef = just_watch.search_for_item(
-                providers=['pls'],
-                genres=[genre],
-                content_types=['show'])
-            tv = results_by_multiplef['items']
-            for x in range(len(tv)):
+            # store recommendations in DB using seperate helper functions
+            chosenMovie = resultsMovies[randint(0, len(resultsMovies) - 1)]
+            storeMovie(chosenMovie['title'], chosenMovie['short_description'], genre)
 
-                resultsTV.append(tv[x])
+            chosenShow = resultsTV[randint(0, len(resultsTV) - 1)]
+            storeShow(chosenShow['title'], chosenShow['short_description'], genre)
 
+            results = [chosenMovie, chosenShow]
+        return render_template('suggest.html', selected=results, mood=max_mood, tweets=text)
 
-        if selected[i] == 'Itunes':
-            results_by_multiplec = just_watch.search_for_item(
-                providers=['itu'],
-                content_types=['movie'],
-                genres=[genre])
-            movies = results_by_multiplec['items']
-            for x in range(len(movies)):
+def searchCachedMovies(providers,genre):
+    conn = mysql.connect()
+    cursor = conn.cursor()
+    if len(providers) == 1:
+        query = "SELECT mname, mdescription FROM Movies M, Providers P, MovieMatch MM " \
+                "WHERE M.mid = MM.mid AND MM.pid = P.pid AND M.mgenre = '{0}' AND P.pname = '{1}'".format(genre,providers[0])
+        cursor.execute(query)
+        cachedResults = cursor.fetchall()
+    elif len(providers) == 2:
+        query = "SELECT mname, mdescription FROM Movies M, Providers P, MovieMatch MM " \
+                "WHERE M.mid = MM.mid AND MM.pid = P.pid AND M.mgenre = '{0}' AND P.pname = '{1}' AND P.pname = '{2}'".format(genre,providers[0],providers[1])
+        cursor.execute(query)
+        cachedResults = cursor.fetchall()
+    elif len(providers) == 3:
+        query = "SELECT mname, mdescription FROM Movies M, Providers P, MovieMatch MM " \
+                "WHERE M.mid = MM.mid AND MM.pid = P.pid AND M.mgenre = '{0}' AND P.pname = '{1}' AND P.pname = '{2}' AND P.pname = '{3}'".format(genre,providers[0],providers[1],providers[2])
+        cursor.execute(query)
+        cachedResults = cursor.fetchall()
+    else:
+        query = "SELECT mname, mdescription FROM Movies M, Providers P, MovieMatch MM " \
+                "WHERE M.mid = MM.mid AND MM.pid = P.pid AND M.mgenre = '{0}' AND P.pname = '{1}' AND P.pname = '{2}' AND P.pname = '{3}' AND P.pname = '{4}'".format(genre,providers[0], providers[1], providers[2],providers[3])
+        cursor.execute(query)
+        cachedResults = cursor.fetchall()
+    return cachedResults
 
-                resultsMovies.append(movies[x])
-            results_by_multiplef = just_watch.search_for_item(
-                providers=['itu'],
-                genres=[genre],
-                content_types=['show'])
-            tv = results_by_multiplef['items']
-            for x in range(len(tv)):
+def searchCachedShows(providers,genre):
+    conn = mysql.connect()
+    cursor = conn.cursor()
+    if len(providers) == 1:
+        query = "SELECT sname, sdescription FROM Shows S, Providers P, ShowMatch SM " \
+                "WHERE S.sid = SM.sid AND SM.pid = P.pid AND S.sgenre = '{0}' AND P.pname = '{1}'".format(genre, providers[0])
+        cursor.execute(query)
+        cachedResults = cursor.fetchall()
+    elif len(providers) == 2:
+        query = "SELECT sname, sdescription FROM Shows S, Providers P, ShowMatch SM " \
+                "WHERE S.sid = SM.sid AND SM.pid = P.pid AND S.sgenre = '{0}' AND P.pname = '{1}' AND P.pname = '{2}'".format(genre,providers[0], providers[1])
+        cursor.execute(query)
+        cachedResults = cursor.fetchall()
+    elif len(providers) == 3:
+        query = "SELECT sname, sdescription FROM Shows S, Providers P, ShowMatch SM " \
+                "WHERE S.sid = SM.sid AND SM.pid = P.pid AND S.sgenre = '{0}' AND P.pname = '{1}' AND P.pname = '{2}' AND P.pname = '{3}'".format(genre,providers[0], providers[1], providers[2])
+        cursor.execute(query)
+        cachedResults = cursor.fetchall()
+    else:
+        query = "SELECT sname, sdescription FROM Shows S, Providers P, ShowMatch SM " \
+                "WHERE S.sid = SM.sid AND SM.pid = P.pid AND S.sgenre = '{0}' AND P.pname = '{1}' AND P.pname = '{2}' AND P.pname = '{3}' AND P.pname = '{4}'".format(genre,providers[0], providers[1], providers[2],providers[3])
+        cursor.execute(query)
+        cachedResults = cursor.fetchall()
+    return cachedResults
 
-                resultsTV.append(tv[x])
+def storeMovie(title,description,genre):
+    #print('title is', title)
+    #print('desc is', description)
+    #print('genre is', genre)
+    conn = mysql.connect()
+    cursor = conn.cursor()
+    newMovieDesc1 = description.replace("'", "")
+    newMovieDesc2 = newMovieDesc1.replace(",", "")
+    newTitle1 = title.replace("'", "")
+    newTitle2 = newTitle1.replace(",", "")
+    query = "INSERT INTO Movies (mname, mdescription, mgenre) VALUES ('{0}', '{1}', '{2}')".format(newTitle2,newMovieDesc2,genre)
+    #print('query is', query)
+    cursor.execute(query)
+    conn.commit()
+    return True
 
+def storeShow(title,description,genre):
+    conn = mysql.connect()
+    cursor = conn.cursor()
+    newShowDesc1 = description.replace("'", "")
+    newShowDesc2 = newShowDesc1.replace(",", "")
+    newTitle1 = title.replace("'", "")
+    newTitle2 = newTitle1.replace(",", "")
+    query = "INSERT INTO Shows (sname, sdescription, sgenre) VALUES ('{0}', '{1}', '{2}')".format(newTitle2,newShowDesc2,genre)
+    cursor.execute(query)
+    conn.commit()
+    return True
 
-        if selected[i] == 'Google Play':
-            results_by_multipled = just_watch.search_for_item(
-                providers=['ply'],
-                content_types=['movie'],
-                genres=[genre])
-            movies = results_by_multipled['items']
-            for x in range(len(movies)):
+def linkMovieProvider(mtitle,pname):
+    conn = mysql.connect()
+    cursor = conn.cursor()
+    mid = getMid(mtitle)
+    pid = getPid(pname)
+    #print('mid is', mid)
+    #print('pis is', pid)
+    if checkMovieDuplicate(mid,pid):
+        #print('dupe found')
+        return True
+    else:
+        #print('linking p and m:', pid, mid)
+        query = "INSERT INTO MovieMatch (mid, pid) VALUES ('{0}', '{1}')".format(mid,pid)
+        cursor.execute(query)
+        conn.commit()
+        return True
 
-                resultsMovies.append(movies[x])
-            results_by_multiplef = just_watch.search_for_item(
-                providers=['ply'],
-                genres=[genre],
-                content_types=['show'])
-            tv = results_by_multiplef['items']
-            for x in range(len(tv)):
+def checkMovieDuplicate(mid,pid):
+    conn = mysql.connect()
+    cursor = conn.cursor()
+    query = "SELECT * FROM MovieMatch WHERE pid = '{0}' AND mid = '{1}' ".format(pid,mid)
+    cursor.execute(query)
+    rowcount = cursor.rowcount
+    #print('row count for p m:',pid,mid, 'is', rowcount)
+    if rowcount == 0:
+        return False
+    else:
+        return True
 
-                resultsTV.append(tv[x])
-        results = [resultsMovies[randint(0, len(resultsMovies) - 1)], resultsTV[randint(0, len(resultsTV) - 1)]]
+def linkShowProvider(stitle,pname):
+    conn = mysql.connect()
+    cursor = conn.cursor()
+    sid = getSid(stitle)
+    pid = getPid(pname)
+    #print('sid is', sid)
+    #print('pis is', pid)
+    if checkShowDuplicate(sid,pid):
+        #print('dupe found')
+        return True
+    else:
+        #print('linking p and s:', pid, sid)
+        query = "INSERT INTO ShowMatch (sid, pid) VALUES ('{0}', '{1}')".format(sid,pid)
+        cursor.execute(query)
+        conn.commit()
+        return True
 
-    return render_template('suggest.html', selected=results, mood=max_mood, tweets=text)
+def checkShowDuplicate(sid,pid):
+    conn = mysql.connect()
+    cursor = conn.cursor()
+    query = "SELECT * FROM ShowMatch WHERE pid = '{0}' AND sid = '{1}' ".format(pid,sid)
+    cursor.execute(query)
+    rowcount = cursor.rowcount
+    #print('row count for p s:', pid, sid, 'is', rowcount)
+    if rowcount == 0:
+        return False
+    else:
+        return True
+
+def getMid(mname):
+    conn = mysql.connect()
+    cursor = conn.cursor()
+    newTitle1 = mname.replace("'", "")
+    newTitle2 = newTitle1.replace(",", "")
+    query = "SELECT M.mid FROM Movies M WHERE mname = '{0}'".format(newTitle2)
+    cursor.execute(query)
+    mid = cursor.fetchone()[0]
+    return mid
+
+def getSid(sname):
+    conn = mysql.connect()
+    cursor = conn.cursor()
+    newTitle1 = sname.replace("'", "")
+    newTitle2 = newTitle1.replace(",", "")
+    query = "SELECT S.sid FROM Shows S WHERE sname = '{0}'".format(newTitle2)
+    cursor.execute(query)
+    sid = cursor.fetchone()[0]
+    return sid
+
+def getPid(pname):
+    conn = mysql.connect()
+    cursor = conn.cursor()
+    query = "SELECT P.pid FROM Providers P WHERE pname = '{0}'".format(pname)
+    cursor.execute(query)
+    pid = cursor.fetchone()[0]
+    return pid
 
 
 @app.route('/oauthorized')

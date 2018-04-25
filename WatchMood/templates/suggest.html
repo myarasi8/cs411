@@ -5,6 +5,25 @@
     <p>
       Hello {{ g.user.screen_name }}! Your overarching mood is {{ mood }} and your suggested Movie is:
     </p>
+
+    {% if cachedMovie %}
+    <h3>{{ cachedMovie[0] }}</h3>
+    <p>
+      Description: {{ cachedMovie[1] }}
+    </p>
+    {% endif %}
+
+    {% if cachedShow %}
+      <p>
+      Your Suggested TV Show is:
+    </p>
+      <h3>{{ cachedShow[0] }}</h3>
+     <p>
+      Description: {{ cachedShow[1] }}
+    </p>
+    {%  endif %}
+
+    {% if selected %}
     <h3>{{ selected[0]['title'] }}</h3>
     <p>
       Description: {{ selected[0]['short_description'] }}
@@ -16,6 +35,7 @@
      <p>
       Description: {{ selected[1]['short_description'] }}
     </p>
+    {%  endif %}
     </ul>
   {% else %}
     <p>

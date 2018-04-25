@@ -10,32 +10,42 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/TwitterLogin$TwitterLogin.coverage" NAME="TwitterLogin Coverage Results" MODIFIED="1524617846670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/TwitterLogin$TwitterLogin.coverage" NAME="TwitterLogin Coverage Results" MODIFIED="1524698543988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="WatchMood.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WatchMood.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3800">
-              <caret line="28" column="2" lean-forward="false" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
+            <state relative-caret-position="74">
+              <caret line="418" column="14" lean-forward="true" selection-start-line="418" selection-start-column="14" selection-end-line="418" selection-end-column="14" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
-                <marker date="1524617908580" expanded="true" signature="829:847" ph="SELECT * FRO... Mood" />
-                <marker date="1524617908580" expanded="true" signature="4969:5138" ph="SELECT mname... Movies" />
-                <marker date="1524617908580" expanded="true" signature="4969:5142" ph="SELECT mname... Movies" />
-                <marker date="1524617908580" expanded="true" signature="4969:5143" ph="SELECT mname... Movies" />
-                <marker date="1524617908580" expanded="true" signature="4969:5152" ph="SELECT mname... Movies" />
-                <marker date="1524617908580" expanded="true" signature="4969:5187" ph="SELECT mname... Movies" />
-                <marker date="1524617908580" expanded="true" signature="5309:5483" ph="SELECT mname... Movies" />
-                <marker date="1524617908580" expanded="true" signature="5309:5501" ph="SELECT mname... Movies" />
-                <marker date="1524617908580" expanded="true" signature="5681:5855" ph="SELECT mname... Movies" />
-                <marker date="1524617908580" expanded="true" signature="5681:5873" ph="SELECT mname... Movies" />
-                <marker date="1524617908580" expanded="true" signature="5681:5912" ph="SELECT mname... Movies" />
-                <marker date="1524617908580" expanded="true" signature="6073:6247" ph="SELECT mname... Movies" />
-                <marker date="1524617908580" expanded="true" signature="6073:6265" ph="SELECT mname... Movies" />
-                <marker date="1524617908580" expanded="true" signature="6073:6305" ph="SELECT mname... Movies" />
-                <marker date="1524617908580" expanded="true" signature="6073:6323" ph="SELECT mname... Movies" />
+                <marker date="1524698543652" expanded="true" signature="810:828" ph="SELECT * FRO... Mood" />
+                <marker date="1524698543652" expanded="true" signature="10484:10654" ph="SELECT mname... Movies" />
+                <marker date="1524698543652" expanded="true" signature="10802:10828" ph="SELECT mname... Movies" />
+                <marker date="1524698543652" expanded="true" signature="10802:10972" ph="SELECT mname... Movies" />
+                <marker date="1524698543652" expanded="true" signature="10802:10992" ph="SELECT mname... Movies" />
+                <marker date="1524698543652" expanded="true" signature="11153:11343" ph="SELECT mname... Movies" />
+                <marker date="1524698543652" expanded="true" signature="11153:11363" ph="SELECT mname... Movies" />
+                <marker date="1524698543652" expanded="true" signature="11517:11727" ph="SELECT mname... Movies" />
+                <marker date="1524698543652" expanded="true" signature="11517:11747" ph="SELECT mname... Movies" />
+                <marker date="1524698543652" expanded="true" signature="12054:12061" ph="SELECT mname... Movies" />
+                <marker date="1524698543652" expanded="true" signature="12054:12222" ph="SELECT sname... Movies" />
+                <marker date="1524698543652" expanded="true" signature="12371:12378" ph="SELECT mname... Movies" />
+                <marker date="1524698543652" expanded="true" signature="12371:12559" ph="SELECT sname... Movies" />
+                <marker date="1524698543652" expanded="true" signature="12721:12728" ph="SELECT mname... Movies" />
+                <marker date="1524698543652" expanded="true" signature="12721:12929" ph="SELECT sname... Movies" />
+                <marker date="1524698543652" expanded="true" signature="13085:13313" ph="SELECT mname... Movies" />
+                <marker date="1524698543652" expanded="true" signature="13866:13943" ph="INSERT INTO Movies... " />
+                <marker date="1524698543652" expanded="true" signature="14360:14436" ph="INSERT INTO Shows... " />
+                <marker date="1524698543652" expanded="true" signature="14886:14941" ph="INSERT INTO MovieMatch... " />
+                <marker date="1524698543652" expanded="true" signature="15133:15191" ph="SELECT * FRO... MovieMatch" />
+                <marker date="1524698543652" expanded="true" signature="15746:15800" ph="INSERT INTO ShowMatch... " />
+                <marker date="1524698543652" expanded="true" signature="15991:16048" ph="SELECT * FRO... ShowMatch" />
+                <marker date="1524698543652" expanded="true" signature="16425:16471" ph="SELECT M.mid... Movies" />
+                <marker date="1524698543652" expanded="true" signature="16732:16777" ph="SELECT S.sid... Shows" />
+                <marker date="1524698543652" expanded="true" signature="16956:17005" ph="SELECT P.pid... Providers" />
               </folding>
             </state>
           </provider>
@@ -44,8 +54,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" column="51" lean-forward="true" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
+            <state relative-caret-position="565">
+              <caret line="35" column="51" lean-forward="false" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -55,7 +65,7 @@
         <entry file="file://$PROJECT_DIR$/templates/layout.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+              <caret line="5" column="7" lean-forward="false" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -64,8 +74,8 @@
       <file leaf-file-name="suggest.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/suggest.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+            <state relative-caret-position="357">
+              <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -84,16 +94,17 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>g.user</find>
+      <find>print</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/templates/layout.html" />
-        <option value="$PROJECT_DIR$/templates/suggest.html" />
         <option value="$PROJECT_DIR$/TwitterLogin.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/twitter.py" />
+        <option value="$PROJECT_DIR$/templates/suggest.html" />
         <option value="$PROJECT_DIR$/WatchMood.py" />
       </list>
     </option>
@@ -104,8 +115,8 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="-7" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -124,7 +135,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -142,6 +152,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -196,16 +207,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1047" extended-state="1" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947807" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16701461" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33191034" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3340448" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -252,21 +263,31 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <marker date="1524617908580" expanded="true" signature="829:847" ph="SELECT * FRO... Mood" />
-            <marker date="1524617908580" expanded="true" signature="4969:5138" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5142" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5143" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5152" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5187" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5309:5483" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5309:5501" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5855" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5873" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5912" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6247" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6265" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6305" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6323" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="810:828" ph="SELECT * FRO... Mood" />
+            <marker date="1524698543652" expanded="true" signature="10484:10654" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10828" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10972" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10992" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11153:11343" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11153:11363" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11517:11727" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11517:11747" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12054:12061" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12054:12222" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12371:12378" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12371:12559" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12721:12728" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12721:12929" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="13085:13313" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="13866:13943" ph="INSERT INTO Movies... " />
+            <marker date="1524698543652" expanded="true" signature="14360:14436" ph="INSERT INTO Shows... " />
+            <marker date="1524698543652" expanded="true" signature="14886:14941" ph="INSERT INTO MovieMatch... " />
+            <marker date="1524698543652" expanded="true" signature="15133:15191" ph="SELECT * FRO... MovieMatch" />
+            <marker date="1524698543652" expanded="true" signature="15746:15800" ph="INSERT INTO ShowMatch... " />
+            <marker date="1524698543652" expanded="true" signature="15991:16048" ph="SELECT * FRO... ShowMatch" />
+            <marker date="1524698543652" expanded="true" signature="16425:16471" ph="SELECT M.mid... Movies" />
+            <marker date="1524698543652" expanded="true" signature="16732:16777" ph="SELECT S.sid... Shows" />
+            <marker date="1524698543652" expanded="true" signature="16956:17005" ph="SELECT P.pid... Providers" />
           </folding>
         </state>
       </provider>
@@ -293,21 +314,31 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <marker date="1524617908580" expanded="true" signature="829:847" ph="SELECT * FRO... Mood" />
-            <marker date="1524617908580" expanded="true" signature="4969:5138" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5142" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5143" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5152" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5187" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5309:5483" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5309:5501" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5855" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5873" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5912" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6247" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6265" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6305" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6323" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="810:828" ph="SELECT * FRO... Mood" />
+            <marker date="1524698543652" expanded="true" signature="10484:10654" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10828" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10972" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10992" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11153:11343" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11153:11363" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11517:11727" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11517:11747" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12054:12061" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12054:12222" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12371:12378" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12371:12559" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12721:12728" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12721:12929" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="13085:13313" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="13866:13943" ph="INSERT INTO Movies... " />
+            <marker date="1524698543652" expanded="true" signature="14360:14436" ph="INSERT INTO Shows... " />
+            <marker date="1524698543652" expanded="true" signature="14886:14941" ph="INSERT INTO MovieMatch... " />
+            <marker date="1524698543652" expanded="true" signature="15133:15191" ph="SELECT * FRO... MovieMatch" />
+            <marker date="1524698543652" expanded="true" signature="15746:15800" ph="INSERT INTO ShowMatch... " />
+            <marker date="1524698543652" expanded="true" signature="15991:16048" ph="SELECT * FRO... ShowMatch" />
+            <marker date="1524698543652" expanded="true" signature="16425:16471" ph="SELECT M.mid... Movies" />
+            <marker date="1524698543652" expanded="true" signature="16732:16777" ph="SELECT S.sid... Shows" />
+            <marker date="1524698543652" expanded="true" signature="16956:17005" ph="SELECT P.pid... Providers" />
           </folding>
         </state>
       </provider>
@@ -334,21 +365,31 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <marker date="1524617908580" expanded="true" signature="829:847" ph="SELECT * FRO... Mood" />
-            <marker date="1524617908580" expanded="true" signature="4969:5138" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5142" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5143" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5152" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5187" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5309:5483" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5309:5501" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5855" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5873" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5912" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6247" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6265" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6305" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6323" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="810:828" ph="SELECT * FRO... Mood" />
+            <marker date="1524698543652" expanded="true" signature="10484:10654" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10828" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10972" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10992" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11153:11343" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11153:11363" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11517:11727" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11517:11747" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12054:12061" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12054:12222" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12371:12378" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12371:12559" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12721:12728" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12721:12929" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="13085:13313" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="13866:13943" ph="INSERT INTO Movies... " />
+            <marker date="1524698543652" expanded="true" signature="14360:14436" ph="INSERT INTO Shows... " />
+            <marker date="1524698543652" expanded="true" signature="14886:14941" ph="INSERT INTO MovieMatch... " />
+            <marker date="1524698543652" expanded="true" signature="15133:15191" ph="SELECT * FRO... MovieMatch" />
+            <marker date="1524698543652" expanded="true" signature="15746:15800" ph="INSERT INTO ShowMatch... " />
+            <marker date="1524698543652" expanded="true" signature="15991:16048" ph="SELECT * FRO... ShowMatch" />
+            <marker date="1524698543652" expanded="true" signature="16425:16471" ph="SELECT M.mid... Movies" />
+            <marker date="1524698543652" expanded="true" signature="16732:16777" ph="SELECT S.sid... Shows" />
+            <marker date="1524698543652" expanded="true" signature="16956:17005" ph="SELECT P.pid... Providers" />
           </folding>
         </state>
       </provider>
@@ -375,21 +416,31 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <marker date="1524617908580" expanded="true" signature="829:847" ph="SELECT * FRO... Mood" />
-            <marker date="1524617908580" expanded="true" signature="4969:5138" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5142" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5143" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5152" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5187" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5309:5483" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5309:5501" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5855" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5873" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5912" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6247" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6265" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6305" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6323" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="810:828" ph="SELECT * FRO... Mood" />
+            <marker date="1524698543652" expanded="true" signature="10484:10654" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10828" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10972" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10992" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11153:11343" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11153:11363" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11517:11727" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11517:11747" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12054:12061" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12054:12222" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12371:12378" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12371:12559" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12721:12728" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12721:12929" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="13085:13313" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="13866:13943" ph="INSERT INTO Movies... " />
+            <marker date="1524698543652" expanded="true" signature="14360:14436" ph="INSERT INTO Shows... " />
+            <marker date="1524698543652" expanded="true" signature="14886:14941" ph="INSERT INTO MovieMatch... " />
+            <marker date="1524698543652" expanded="true" signature="15133:15191" ph="SELECT * FRO... MovieMatch" />
+            <marker date="1524698543652" expanded="true" signature="15746:15800" ph="INSERT INTO ShowMatch... " />
+            <marker date="1524698543652" expanded="true" signature="15991:16048" ph="SELECT * FRO... ShowMatch" />
+            <marker date="1524698543652" expanded="true" signature="16425:16471" ph="SELECT M.mid... Movies" />
+            <marker date="1524698543652" expanded="true" signature="16732:16777" ph="SELECT S.sid... Shows" />
+            <marker date="1524698543652" expanded="true" signature="16956:17005" ph="SELECT P.pid... Providers" />
           </folding>
         </state>
       </provider>
@@ -416,21 +467,31 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <marker date="1524617908580" expanded="true" signature="829:847" ph="SELECT * FRO... Mood" />
-            <marker date="1524617908580" expanded="true" signature="4969:5138" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5142" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5143" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5152" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5187" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5309:5483" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5309:5501" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5855" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5873" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5912" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6247" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6265" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6305" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6323" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="810:828" ph="SELECT * FRO... Mood" />
+            <marker date="1524698543652" expanded="true" signature="10484:10654" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10828" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10972" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10992" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11153:11343" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11153:11363" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11517:11727" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11517:11747" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12054:12061" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12054:12222" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12371:12378" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12371:12559" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12721:12728" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12721:12929" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="13085:13313" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="13866:13943" ph="INSERT INTO Movies... " />
+            <marker date="1524698543652" expanded="true" signature="14360:14436" ph="INSERT INTO Shows... " />
+            <marker date="1524698543652" expanded="true" signature="14886:14941" ph="INSERT INTO MovieMatch... " />
+            <marker date="1524698543652" expanded="true" signature="15133:15191" ph="SELECT * FRO... MovieMatch" />
+            <marker date="1524698543652" expanded="true" signature="15746:15800" ph="INSERT INTO ShowMatch... " />
+            <marker date="1524698543652" expanded="true" signature="15991:16048" ph="SELECT * FRO... ShowMatch" />
+            <marker date="1524698543652" expanded="true" signature="16425:16471" ph="SELECT M.mid... Movies" />
+            <marker date="1524698543652" expanded="true" signature="16732:16777" ph="SELECT S.sid... Shows" />
+            <marker date="1524698543652" expanded="true" signature="16956:17005" ph="SELECT P.pid... Providers" />
           </folding>
         </state>
       </provider>
@@ -457,21 +518,31 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <marker date="1524617908580" expanded="true" signature="829:847" ph="SELECT * FRO... Mood" />
-            <marker date="1524617908580" expanded="true" signature="4969:5138" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5142" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5143" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5152" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5187" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5309:5483" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5309:5501" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5855" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5873" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5912" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6247" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6265" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6305" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6323" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="810:828" ph="SELECT * FRO... Mood" />
+            <marker date="1524698543652" expanded="true" signature="10484:10654" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10828" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10972" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10992" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11153:11343" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11153:11363" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11517:11727" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11517:11747" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12054:12061" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12054:12222" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12371:12378" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12371:12559" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12721:12728" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12721:12929" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="13085:13313" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="13866:13943" ph="INSERT INTO Movies... " />
+            <marker date="1524698543652" expanded="true" signature="14360:14436" ph="INSERT INTO Shows... " />
+            <marker date="1524698543652" expanded="true" signature="14886:14941" ph="INSERT INTO MovieMatch... " />
+            <marker date="1524698543652" expanded="true" signature="15133:15191" ph="SELECT * FRO... MovieMatch" />
+            <marker date="1524698543652" expanded="true" signature="15746:15800" ph="INSERT INTO ShowMatch... " />
+            <marker date="1524698543652" expanded="true" signature="15991:16048" ph="SELECT * FRO... ShowMatch" />
+            <marker date="1524698543652" expanded="true" signature="16425:16471" ph="SELECT M.mid... Movies" />
+            <marker date="1524698543652" expanded="true" signature="16732:16777" ph="SELECT S.sid... Shows" />
+            <marker date="1524698543652" expanded="true" signature="16956:17005" ph="SELECT P.pid... Providers" />
           </folding>
         </state>
       </provider>
@@ -498,21 +569,31 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <marker date="1524617908580" expanded="true" signature="829:847" ph="SELECT * FRO... Mood" />
-            <marker date="1524617908580" expanded="true" signature="4969:5138" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5142" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5143" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5152" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5187" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5309:5483" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5309:5501" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5855" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5873" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5912" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6247" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6265" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6305" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6323" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="810:828" ph="SELECT * FRO... Mood" />
+            <marker date="1524698543652" expanded="true" signature="10484:10654" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10828" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10972" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10992" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11153:11343" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11153:11363" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11517:11727" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11517:11747" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12054:12061" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12054:12222" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12371:12378" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12371:12559" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12721:12728" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12721:12929" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="13085:13313" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="13866:13943" ph="INSERT INTO Movies... " />
+            <marker date="1524698543652" expanded="true" signature="14360:14436" ph="INSERT INTO Shows... " />
+            <marker date="1524698543652" expanded="true" signature="14886:14941" ph="INSERT INTO MovieMatch... " />
+            <marker date="1524698543652" expanded="true" signature="15133:15191" ph="SELECT * FRO... MovieMatch" />
+            <marker date="1524698543652" expanded="true" signature="15746:15800" ph="INSERT INTO ShowMatch... " />
+            <marker date="1524698543652" expanded="true" signature="15991:16048" ph="SELECT * FRO... ShowMatch" />
+            <marker date="1524698543652" expanded="true" signature="16425:16471" ph="SELECT M.mid... Movies" />
+            <marker date="1524698543652" expanded="true" signature="16732:16777" ph="SELECT S.sid... Shows" />
+            <marker date="1524698543652" expanded="true" signature="16956:17005" ph="SELECT P.pid... Providers" />
           </folding>
         </state>
       </provider>
@@ -539,21 +620,31 @@
           <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <marker date="1524617908580" expanded="true" signature="829:847" ph="SELECT * FRO... Mood" />
-            <marker date="1524617908580" expanded="true" signature="4969:5138" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5142" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5143" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5152" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5187" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5309:5483" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5309:5501" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5855" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5873" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5912" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6247" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6265" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6305" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6323" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="810:828" ph="SELECT * FRO... Mood" />
+            <marker date="1524698543652" expanded="true" signature="10484:10654" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10828" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10972" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10992" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11153:11343" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11153:11363" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11517:11727" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11517:11747" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12054:12061" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12054:12222" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12371:12378" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12371:12559" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12721:12728" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12721:12929" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="13085:13313" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="13866:13943" ph="INSERT INTO Movies... " />
+            <marker date="1524698543652" expanded="true" signature="14360:14436" ph="INSERT INTO Shows... " />
+            <marker date="1524698543652" expanded="true" signature="14886:14941" ph="INSERT INTO MovieMatch... " />
+            <marker date="1524698543652" expanded="true" signature="15133:15191" ph="SELECT * FRO... MovieMatch" />
+            <marker date="1524698543652" expanded="true" signature="15746:15800" ph="INSERT INTO ShowMatch... " />
+            <marker date="1524698543652" expanded="true" signature="15991:16048" ph="SELECT * FRO... ShowMatch" />
+            <marker date="1524698543652" expanded="true" signature="16425:16471" ph="SELECT M.mid... Movies" />
+            <marker date="1524698543652" expanded="true" signature="16732:16777" ph="SELECT S.sid... Shows" />
+            <marker date="1524698543652" expanded="true" signature="16956:17005" ph="SELECT P.pid... Providers" />
           </folding>
         </state>
       </provider>
@@ -580,21 +671,31 @@
           <caret line="56" column="36" lean-forward="false" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <marker date="1524617908580" expanded="true" signature="829:847" ph="SELECT * FRO... Mood" />
-            <marker date="1524617908580" expanded="true" signature="4969:5138" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5142" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5143" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5152" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5187" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5309:5483" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5309:5501" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5855" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5873" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5912" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6247" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6265" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6305" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6323" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="810:828" ph="SELECT * FRO... Mood" />
+            <marker date="1524698543652" expanded="true" signature="10484:10654" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10828" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10972" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10992" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11153:11343" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11153:11363" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11517:11727" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11517:11747" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12054:12061" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12054:12222" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12371:12378" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12371:12559" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12721:12728" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12721:12929" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="13085:13313" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="13866:13943" ph="INSERT INTO Movies... " />
+            <marker date="1524698543652" expanded="true" signature="14360:14436" ph="INSERT INTO Shows... " />
+            <marker date="1524698543652" expanded="true" signature="14886:14941" ph="INSERT INTO MovieMatch... " />
+            <marker date="1524698543652" expanded="true" signature="15133:15191" ph="SELECT * FRO... MovieMatch" />
+            <marker date="1524698543652" expanded="true" signature="15746:15800" ph="INSERT INTO ShowMatch... " />
+            <marker date="1524698543652" expanded="true" signature="15991:16048" ph="SELECT * FRO... ShowMatch" />
+            <marker date="1524698543652" expanded="true" signature="16425:16471" ph="SELECT M.mid... Movies" />
+            <marker date="1524698543652" expanded="true" signature="16732:16777" ph="SELECT S.sid... Shows" />
+            <marker date="1524698543652" expanded="true" signature="16956:17005" ph="SELECT P.pid... Providers" />
           </folding>
         </state>
       </provider>
@@ -621,21 +722,31 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <marker date="1524617908580" expanded="true" signature="829:847" ph="SELECT * FRO... Mood" />
-            <marker date="1524617908580" expanded="true" signature="4969:5138" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5142" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5143" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5152" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5187" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5309:5483" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5309:5501" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5855" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5873" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5912" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6247" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6265" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6305" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6323" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="810:828" ph="SELECT * FRO... Mood" />
+            <marker date="1524698543652" expanded="true" signature="10484:10654" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10828" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10972" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10992" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11153:11343" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11153:11363" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11517:11727" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11517:11747" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12054:12061" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12054:12222" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12371:12378" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12371:12559" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12721:12728" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12721:12929" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="13085:13313" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="13866:13943" ph="INSERT INTO Movies... " />
+            <marker date="1524698543652" expanded="true" signature="14360:14436" ph="INSERT INTO Shows... " />
+            <marker date="1524698543652" expanded="true" signature="14886:14941" ph="INSERT INTO MovieMatch... " />
+            <marker date="1524698543652" expanded="true" signature="15133:15191" ph="SELECT * FRO... MovieMatch" />
+            <marker date="1524698543652" expanded="true" signature="15746:15800" ph="INSERT INTO ShowMatch... " />
+            <marker date="1524698543652" expanded="true" signature="15991:16048" ph="SELECT * FRO... ShowMatch" />
+            <marker date="1524698543652" expanded="true" signature="16425:16471" ph="SELECT M.mid... Movies" />
+            <marker date="1524698543652" expanded="true" signature="16732:16777" ph="SELECT S.sid... Shows" />
+            <marker date="1524698543652" expanded="true" signature="16956:17005" ph="SELECT P.pid... Providers" />
           </folding>
         </state>
       </provider>
@@ -662,21 +773,31 @@
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <marker date="1524617908580" expanded="true" signature="829:847" ph="SELECT * FRO... Mood" />
-            <marker date="1524617908580" expanded="true" signature="4969:5138" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5142" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5143" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5152" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5187" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5309:5483" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5309:5501" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5855" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5873" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5912" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6247" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6265" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6305" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6323" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="810:828" ph="SELECT * FRO... Mood" />
+            <marker date="1524698543652" expanded="true" signature="10484:10654" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10828" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10972" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10992" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11153:11343" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11153:11363" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11517:11727" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11517:11747" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12054:12061" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12054:12222" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12371:12378" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12371:12559" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12721:12728" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12721:12929" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="13085:13313" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="13866:13943" ph="INSERT INTO Movies... " />
+            <marker date="1524698543652" expanded="true" signature="14360:14436" ph="INSERT INTO Shows... " />
+            <marker date="1524698543652" expanded="true" signature="14886:14941" ph="INSERT INTO MovieMatch... " />
+            <marker date="1524698543652" expanded="true" signature="15133:15191" ph="SELECT * FRO... MovieMatch" />
+            <marker date="1524698543652" expanded="true" signature="15746:15800" ph="INSERT INTO ShowMatch... " />
+            <marker date="1524698543652" expanded="true" signature="15991:16048" ph="SELECT * FRO... ShowMatch" />
+            <marker date="1524698543652" expanded="true" signature="16425:16471" ph="SELECT M.mid... Movies" />
+            <marker date="1524698543652" expanded="true" signature="16732:16777" ph="SELECT S.sid... Shows" />
+            <marker date="1524698543652" expanded="true" signature="16956:17005" ph="SELECT P.pid... Providers" />
           </folding>
         </state>
       </provider>
@@ -703,21 +824,31 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <marker date="1524617908580" expanded="true" signature="829:847" ph="SELECT * FRO... Mood" />
-            <marker date="1524617908580" expanded="true" signature="4969:5138" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5142" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5143" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5152" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5187" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5309:5483" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5309:5501" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5855" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5873" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5912" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6247" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6265" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6305" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6323" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="810:828" ph="SELECT * FRO... Mood" />
+            <marker date="1524698543652" expanded="true" signature="10484:10654" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10828" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10972" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10992" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11153:11343" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11153:11363" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11517:11727" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11517:11747" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12054:12061" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12054:12222" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12371:12378" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12371:12559" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12721:12728" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12721:12929" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="13085:13313" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="13866:13943" ph="INSERT INTO Movies... " />
+            <marker date="1524698543652" expanded="true" signature="14360:14436" ph="INSERT INTO Shows... " />
+            <marker date="1524698543652" expanded="true" signature="14886:14941" ph="INSERT INTO MovieMatch... " />
+            <marker date="1524698543652" expanded="true" signature="15133:15191" ph="SELECT * FRO... MovieMatch" />
+            <marker date="1524698543652" expanded="true" signature="15746:15800" ph="INSERT INTO ShowMatch... " />
+            <marker date="1524698543652" expanded="true" signature="15991:16048" ph="SELECT * FRO... ShowMatch" />
+            <marker date="1524698543652" expanded="true" signature="16425:16471" ph="SELECT M.mid... Movies" />
+            <marker date="1524698543652" expanded="true" signature="16732:16777" ph="SELECT S.sid... Shows" />
+            <marker date="1524698543652" expanded="true" signature="16956:17005" ph="SELECT P.pid... Providers" />
           </folding>
         </state>
       </provider>
@@ -736,21 +867,31 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <marker date="1524617908580" expanded="true" signature="829:847" ph="SELECT * FRO... Mood" />
-            <marker date="1524617908580" expanded="true" signature="4969:5138" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5142" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5143" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5152" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5187" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5309:5483" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5309:5501" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5855" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5873" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5912" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6247" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6265" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6305" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6323" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="810:828" ph="SELECT * FRO... Mood" />
+            <marker date="1524698543652" expanded="true" signature="10484:10654" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10828" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10972" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10992" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11153:11343" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11153:11363" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11517:11727" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11517:11747" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12054:12061" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12054:12222" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12371:12378" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12371:12559" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12721:12728" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12721:12929" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="13085:13313" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="13866:13943" ph="INSERT INTO Movies... " />
+            <marker date="1524698543652" expanded="true" signature="14360:14436" ph="INSERT INTO Shows... " />
+            <marker date="1524698543652" expanded="true" signature="14886:14941" ph="INSERT INTO MovieMatch... " />
+            <marker date="1524698543652" expanded="true" signature="15133:15191" ph="SELECT * FRO... MovieMatch" />
+            <marker date="1524698543652" expanded="true" signature="15746:15800" ph="INSERT INTO ShowMatch... " />
+            <marker date="1524698543652" expanded="true" signature="15991:16048" ph="SELECT * FRO... ShowMatch" />
+            <marker date="1524698543652" expanded="true" signature="16425:16471" ph="SELECT M.mid... Movies" />
+            <marker date="1524698543652" expanded="true" signature="16732:16777" ph="SELECT S.sid... Shows" />
+            <marker date="1524698543652" expanded="true" signature="16956:17005" ph="SELECT P.pid... Providers" />
           </folding>
         </state>
       </provider>
@@ -769,21 +910,31 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <marker date="1524617908580" expanded="true" signature="829:847" ph="SELECT * FRO... Mood" />
-            <marker date="1524617908580" expanded="true" signature="4969:5138" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5142" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5143" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5152" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5187" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5309:5483" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5309:5501" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5855" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5873" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5912" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6247" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6265" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6305" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6323" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="810:828" ph="SELECT * FRO... Mood" />
+            <marker date="1524698543652" expanded="true" signature="10484:10654" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10828" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10972" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10992" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11153:11343" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11153:11363" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11517:11727" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11517:11747" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12054:12061" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12054:12222" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12371:12378" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12371:12559" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12721:12728" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12721:12929" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="13085:13313" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="13866:13943" ph="INSERT INTO Movies... " />
+            <marker date="1524698543652" expanded="true" signature="14360:14436" ph="INSERT INTO Shows... " />
+            <marker date="1524698543652" expanded="true" signature="14886:14941" ph="INSERT INTO MovieMatch... " />
+            <marker date="1524698543652" expanded="true" signature="15133:15191" ph="SELECT * FRO... MovieMatch" />
+            <marker date="1524698543652" expanded="true" signature="15746:15800" ph="INSERT INTO ShowMatch... " />
+            <marker date="1524698543652" expanded="true" signature="15991:16048" ph="SELECT * FRO... ShowMatch" />
+            <marker date="1524698543652" expanded="true" signature="16425:16471" ph="SELECT M.mid... Movies" />
+            <marker date="1524698543652" expanded="true" signature="16732:16777" ph="SELECT S.sid... Shows" />
+            <marker date="1524698543652" expanded="true" signature="16956:17005" ph="SELECT P.pid... Providers" />
           </folding>
         </state>
       </provider>
@@ -802,21 +953,31 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <marker date="1524617908580" expanded="true" signature="829:847" ph="SELECT * FRO... Mood" />
-            <marker date="1524617908580" expanded="true" signature="4969:5138" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5142" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5143" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5152" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5187" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5309:5483" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5309:5501" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5855" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5873" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5912" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6247" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6265" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6305" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6323" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="810:828" ph="SELECT * FRO... Mood" />
+            <marker date="1524698543652" expanded="true" signature="10484:10654" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10828" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10972" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10992" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11153:11343" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11153:11363" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11517:11727" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11517:11747" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12054:12061" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12054:12222" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12371:12378" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12371:12559" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12721:12728" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12721:12929" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="13085:13313" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="13866:13943" ph="INSERT INTO Movies... " />
+            <marker date="1524698543652" expanded="true" signature="14360:14436" ph="INSERT INTO Shows... " />
+            <marker date="1524698543652" expanded="true" signature="14886:14941" ph="INSERT INTO MovieMatch... " />
+            <marker date="1524698543652" expanded="true" signature="15133:15191" ph="SELECT * FRO... MovieMatch" />
+            <marker date="1524698543652" expanded="true" signature="15746:15800" ph="INSERT INTO ShowMatch... " />
+            <marker date="1524698543652" expanded="true" signature="15991:16048" ph="SELECT * FRO... ShowMatch" />
+            <marker date="1524698543652" expanded="true" signature="16425:16471" ph="SELECT M.mid... Movies" />
+            <marker date="1524698543652" expanded="true" signature="16732:16777" ph="SELECT S.sid... Shows" />
+            <marker date="1524698543652" expanded="true" signature="16956:17005" ph="SELECT P.pid... Providers" />
           </folding>
         </state>
       </provider>
@@ -841,7 +1002,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="26" column="55" lean-forward="false" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -849,7 +1009,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="17" column="64" lean-forward="true" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -857,30 +1016,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/suggest.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../PhotoShare/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11424">
-          <caret line="823" column="36" lean-forward="true" selection-start-line="823" selection-start-column="36" selection-end-line="823" selection-end-column="36" />
+        <state relative-caret-position="845">
+          <caret line="220" column="18" lean-forward="false" selection-start-line="220" selection-start-column="18" selection-end-line="220" selection-end-column="18" />
           <folding>
             <marker date="1509743227068" expanded="true" signature="1456:1479" ph="SELECT email... Users" />
             <marker date="1509743227068" expanded="true" signature="1767:1790" ph="SELECT email... Users" />
@@ -948,33 +1090,59 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="51" lean-forward="true" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
+        <state relative-caret-position="565">
+          <caret line="35" column="51" lean-forward="false" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="7" lean-forward="false" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/suggest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WatchMood.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3800">
-          <caret line="28" column="2" lean-forward="false" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
+        <state relative-caret-position="74">
+          <caret line="418" column="14" lean-forward="true" selection-start-line="418" selection-start-column="14" selection-end-line="418" selection-end-column="14" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <marker date="1524617908580" expanded="true" signature="829:847" ph="SELECT * FRO... Mood" />
-            <marker date="1524617908580" expanded="true" signature="4969:5138" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5142" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5143" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5152" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="4969:5187" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5309:5483" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5309:5501" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5855" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5873" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="5681:5912" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6247" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6265" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6305" ph="SELECT mname... Movies" />
-            <marker date="1524617908580" expanded="true" signature="6073:6323" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="810:828" ph="SELECT * FRO... Mood" />
+            <marker date="1524698543652" expanded="true" signature="10484:10654" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10828" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10972" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="10802:10992" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11153:11343" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11153:11363" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11517:11727" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="11517:11747" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12054:12061" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12054:12222" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12371:12378" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12371:12559" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12721:12728" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="12721:12929" ph="SELECT sname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="13085:13313" ph="SELECT mname... Movies" />
+            <marker date="1524698543652" expanded="true" signature="13866:13943" ph="INSERT INTO Movies... " />
+            <marker date="1524698543652" expanded="true" signature="14360:14436" ph="INSERT INTO Shows... " />
+            <marker date="1524698543652" expanded="true" signature="14886:14941" ph="INSERT INTO MovieMatch... " />
+            <marker date="1524698543652" expanded="true" signature="15133:15191" ph="SELECT * FRO... MovieMatch" />
+            <marker date="1524698543652" expanded="true" signature="15746:15800" ph="INSERT INTO ShowMatch... " />
+            <marker date="1524698543652" expanded="true" signature="15991:16048" ph="SELECT * FRO... ShowMatch" />
+            <marker date="1524698543652" expanded="true" signature="16425:16471" ph="SELECT M.mid... Movies" />
+            <marker date="1524698543652" expanded="true" signature="16732:16777" ph="SELECT S.sid... Shows" />
+            <marker date="1524698543652" expanded="true" signature="16956:17005" ph="SELECT P.pid... Providers" />
           </folding>
         </state>
       </provider>
