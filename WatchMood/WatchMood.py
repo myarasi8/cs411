@@ -139,26 +139,16 @@ def result():
     # check if movies / shows corresponding to the given mood have already been stored,
     # if so place those into results
     # else retrieve movies from justwatch api and place results in the database
-    # place into a variable called cachedResults so that displaying is easier
-
-    #gquery = "INSERT INTO Users (fname, lname, dob, email, password, gender) VALUES ('{0}' , '{1}', '{2}','{3}','{4}', '{5}')".format(fname, lname, dob, email, password, gender)
-    # conn = mysql.connect()
-    # cursor = conn.cursor()
-    # query = "SELECT * FROM Mood"
-    # cursor.execute(query)
-    # Moods = cursor.fetchall()
-
+    # (place into a seperate variable so that displaying is easier)
+    
     ## The following code checks the DB for relevant data already being present in the DB
     cachedMovies = searchCachedMovies(selected,genre)
     cachedShows = searchCachedShows(selected,genre)
-    #print('####################### Cached Movie results:')
-    #print(cachedMovies)
+    
     if cachedMovies != ():
         if cachedShows != ():
             chosenMovie = cachedMovies[randint(0, len(cachedMovies) - 1)]
             chosenShow = cachedShows[randint(0, len(cachedShows) - 1)]
-            #print('chosen m:', chosenMovie)
-            #print('chosen s:', chosenShow)
             return render_template('suggest.html', cachedMovie=chosenMovie, cachedShow = chosenShow, mood=max_mood, tweets=text)
     else:
     # below occurs if no relevant info found within the DB, every result below needs to be put into the DB
@@ -305,9 +295,6 @@ def searchCachedShows(providers,genre):
     return cachedResults
 
 def storeMovie(title,description,genre):
-    #print('title is', title)
-    #print('desc is', description)
-    #print('genre is', genre)
     conn = mysql.connect()
     cursor = conn.cursor()
     newMovieDesc1 = description.replace("'", "")
@@ -315,7 +302,6 @@ def storeMovie(title,description,genre):
     newTitle1 = title.replace("'", "")
     newTitle2 = newTitle1.replace(",", "")
     query = "INSERT INTO Movies (mname, mdescription, mgenre) VALUES ('{0}', '{1}', '{2}')".format(newTitle2,newMovieDesc2,genre)
-    #print('query is', query)
     cursor.execute(query)
     conn.commit()
     return True
@@ -337,13 +323,9 @@ def linkMovieProvider(mtitle,pname):
     cursor = conn.cursor()
     mid = getMid(mtitle)
     pid = getPid(pname)
-    #print('mid is', mid)
-    #print('pis is', pid)
     if checkMovieDuplicate(mid,pid):
-        #print('dupe found')
         return True
     else:
-        #print('linking p and m:', pid, mid)
         query = "INSERT INTO MovieMatch (mid, pid) VALUES ('{0}', '{1}')".format(mid,pid)
         cursor.execute(query)
         conn.commit()
@@ -355,7 +337,6 @@ def checkMovieDuplicate(mid,pid):
     query = "SELECT * FROM MovieMatch WHERE pid = '{0}' AND mid = '{1}' ".format(pid,mid)
     cursor.execute(query)
     rowcount = cursor.rowcount
-    #print('row count for p m:',pid,mid, 'is', rowcount)
     if rowcount == 0:
         return False
     else:
@@ -366,13 +347,9 @@ def linkShowProvider(stitle,pname):
     cursor = conn.cursor()
     sid = getSid(stitle)
     pid = getPid(pname)
-    #print('sid is', sid)
-    #print('pis is', pid)
     if checkShowDuplicate(sid,pid):
-        #print('dupe found')
         return True
     else:
-        #print('linking p and s:', pid, sid)
         query = "INSERT INTO ShowMatch (sid, pid) VALUES ('{0}', '{1}')".format(sid,pid)
         cursor.execute(query)
         conn.commit()
@@ -384,7 +361,6 @@ def checkShowDuplicate(sid,pid):
     query = "SELECT * FROM ShowMatch WHERE pid = '{0}' AND sid = '{1}' ".format(pid,sid)
     cursor.execute(query)
     rowcount = cursor.rowcount
-    #print('row count for p s:', pid, sid, 'is', rowcount)
     if rowcount == 0:
         return False
     else:
