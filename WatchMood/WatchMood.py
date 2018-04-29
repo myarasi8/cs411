@@ -73,8 +73,9 @@ def index():
             flash('Unable to load tweets from Twitter.')
     return render_template('index.html', tweets=tweets)
 
-# helper function which retrieves the users most recent tweets
-def lastTenTweets():
+# helper function which retrieves the users most recent 20 tweets
+# (20 tweets is the default return count for a users's home_timeline)
+def lastTwentyTweets():
     tweets = []
     if g.user is not None:
         resp = twitter.request('statuses/home_timeline.json')
@@ -119,7 +120,7 @@ def result():
     moodDict = {"Joy": 'act', "Sadness": 'cmy', "Anger": 'trl', "Fear": 'fnt', "Analytical": 'doc', "Confident": 'hrr',
                 "Tentative": 'rma'}
     # concatinating all of the users tweets in variable text, which is then passed to the IBM Watson Tone Analyzer API
-    tweet = lastTenTweets()
+    tweet = lastTwentyTweets()
     tweets = []
     for i in range(len(tweet)):
         tweets.append(tweet[i]['text'])
