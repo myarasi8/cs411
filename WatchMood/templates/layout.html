@@ -4,8 +4,6 @@
 <title>{% block title %}Welcome{% endblock %} | Watch Your Mood</title>
   <a><img src="{{
             url_for('static', filename='logo.png') }}" alt="logo"></a>
-<link rel=stylesheet type=text/css href="{{ url_for('static',
-  filename='style.css') }}">
 </head>
 </div>
 
@@ -15,9 +13,6 @@
   }
   .firstpage {
     background-color: lightblue;
-    potition : relative;
-    text-align: right;
-    margin-right: 30px;
   }
   .main {
     background-color: lightblue;
@@ -26,37 +21,34 @@
   .loggedIn{
     background-color: lightblue;
     position : relative;
-    margin-left: 20px;
+    margin-left: 30px;
   }
   .streaming{
-    background-color: lightblue;
-    position : relative;
-    margin-left : 20px;
-  }
-  .tweets{
-    background-color: lightblue;
-    position : relative;
+    position: relative;
     margin-left: 20px;
   }
+  .tweets{
+    position: relative;
+  }
 
+  .pageFooter{
+      background-color: #5e0d0d;
+      height: 90px;
+  }
+
+  .suggestMain{
+        background-color: lightblue;
+        font-family: "Helvetica Neue";
+        position: relative;
+  }
 
 </style>
-  <body>
   <div class="firstpage">
-    <!--<h1>Watch Your Mood</h1>-->
-
-<!--  <ul class=navigation>
-    {% if g.user %}
-    <a href="{{ url_for('logout') }}">sign out [{{ g.user.screen_name}}]</a>
-    {% endif %}
-  </ul>-->
+    <body>
+    {% block body %}{% endblock %}
+    </body>
   </div>
-<!--  {% for message in get_flashed_messages() %}
-    <p class=message>{{ message }}</p>
-  {% endfor %}-->
-  {% block body %}{% endblock %}
-  </body>
-
-
 
 </html>
+
+

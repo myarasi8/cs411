@@ -1,11 +1,10 @@
-
 <div class="main">
 {% extends "layout.html" %}
 {% block body %}
   {% if g.user %}
     <div class="loggedIn">
-        <h2>You Are Now Logged In</h2>
-        <p style="position : relative; margin-left: 30px;">
+        <h2>Logged In</h2>
+        <p style="position : relative; margin-left : 30px">
             Hello {{ g.user.screen_name }}!
         </p>
         <ul class=navigation>
@@ -23,34 +22,46 @@
     <div class="streaming">
         <h2>What Streaming Sites do you have?</h2>
             <form action = "http://localhost:5000/suggest" method = "POST">
-                <p style="position : relative; margin-left: 30px;"><input type="checkbox" name="check" value="Netflix" unchecked> Netflix </p>
-                <p style="position : relative; margin-left: 30px;"><input type="checkbox" name="check" value="Playstation Video" unchecked> Playstation Video </p>
-                <p style="position : relative; margin-left: 30px;"><input type="checkbox" name="check" value="Itunes" unchecked> Itunes </p>
-                <p style="position : relative; margin-left: 30px;"><input type="checkbox" name="check" value="Google Play" unchecked> Google Play </p>
+                <p style="position : relative; margin-left : 30px"><input type="checkbox" name="check" value="Netflix" unchecked> Netflix </p>
+                <p style="position : relative; margin-left : 30px"><input type="checkbox" name="check" value="Playstation Video" unchecked> Playstation Video </p>
+                <p style="position : relative; margin-left : 30px"><input type="checkbox" name="check" value="Itunes" unchecked> Itunes </p>
+                <p style="position : relative; margin-left : 30px"><input type="checkbox" name="check" value="Google Play" unchecked> Google Play </p>
                 <input type="submit" name="submit" value="Get Your Suggestion">
             </form>
     </div>
 
+    {%  if noneCheck %}
+        <p style="color : red;">Please select at least one provider above</p>
+    {%  endif %}
     <div class="tweets">
         {% if tweets %}
-        <h3 style="font-size: 150%;">Your Timeline:</h3>
+        <h3 style="font-size : 150%;">Your Timeline:</h3>
         <ul>
         {% for tweet in tweets %}
-          <li style="font-size: 75%;"><a href="http://twitter.com/{{ tweet.user.screen_name
+          <li style="font-size : 75%;"><a href="http://twitter.com/{{ tweet.user.screen_name
             }}">{{ tweet.user.screen_name }}</a>: {{ tweet.text|urlize }}</li>
         {% endfor %}
         </ul>
         {% endif %}
       {% else %}
         <p>
-          Sign in to view your public timeline!
+            Welcome to WatchYourMood! Tell us how you feel and we'll tell you to watch!
+        </p>
+        <p>
+          Sign in to use the app!
         </p>
         <p>
           <a href="{{ url_for('login') }}"><img src="{{
             url_for('static', filename='sign-in.png') }}" alt="sign in"></a>
         </p>
     </div>
-   </div>
+
 
   {% endif %}
+   <div class="pageFooter">
+      <br>
+      <b style="position: relative; text-align : center; left : 87px;"><p style="color : white">Watch Your Mood:</p></b>
+      <b style="text-align: right"><p style="color : white">Jeff Donahue, Riccardo Falsini, Paula Hernandez, Mahesh Yarasi</p></b>
+   </div>
+</div>
 {% endblock %}
