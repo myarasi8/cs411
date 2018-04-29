@@ -1,12 +1,21 @@
+
 <div class="main">
 {% extends "layout.html" %}
 {% block body %}
   {% if g.user %}
     <div class="loggedIn">
         <h2>Logged In</h2>
-        <p>
+        <p style="position : relative; margin-left: 30px;">
             Hello {{ g.user.screen_name }}!
         </p>
+        <ul class=navigation>
+            {% if g.user %}
+            <a href="{{ url_for('logout') }}">sign out [{{ g.user.screen_name}}]</a>
+            {% endif %}
+        </ul>
+        {% for message in get_flashed_messages() %}
+            <p class=message>{{ message }}</p>
+        {% endfor %}
     </div>
 
 
@@ -14,20 +23,20 @@
     <div class="streaming">
         <h2>What Streaming Sites do you have?</h2>
             <form action = "http://localhost:5000/suggest" method = "POST">
-                <p><input type="checkbox" name="check" value="Netflix" unchecked> Netflix </p>
-                <p><input type="checkbox" name="check" value="Playstation Video" unchecked> Playstation Video </p>
-                <p><input type="checkbox" name="check" value="Itunes" unchecked> Itunes </p>
-                <p><input type="checkbox" name="check" value="Google Play" unchecked> Google Play </p>
+                <p style="position : relative; margin-left: 30px;"><input type="checkbox" name="check" value="Netflix" unchecked> Netflix </p>
+                <p style="position : relative; margin-left: 30px;"><input type="checkbox" name="check" value="Playstation Video" unchecked> Playstation Video </p>
+                <p style="position : relative; margin-left: 30px;"><input type="checkbox" name="check" value="Itunes" unchecked> Itunes </p>
+                <p style="position : relative; margin-left: 30px;"><input type="checkbox" name="check" value="Google Play" unchecked> Google Play </p>
                 <input type="submit" name="submit" value="Get Your Suggestion">
             </form>
     </div>
 
     <div class="tweets">
         {% if tweets %}
-        <h3>Your Timeline:</h3>
+        <h3 style="font-size: 150%;">Your Timeline:</h3>
         <ul>
         {% for tweet in tweets %}
-          <li><a href="http://twitter.com/{{ tweet.user.screen_name
+          <li style="font-size: 75%;"><a href="http://twitter.com/{{ tweet.user.screen_name
             }}">{{ tweet.user.screen_name }}</a>: {{ tweet.text|urlize }}</li>
         {% endfor %}
         </ul>
