@@ -1,3 +1,3 @@
 ## **Watch Mood**
 
-This folder contains the code used to 
+This folder contains the final code for the **Watch Your Mood** web application. 
