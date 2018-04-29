@@ -3,7 +3,7 @@ When you are up late and can’t decide what to watch, this web application will
 
 The app uses the following API’s:
 1.	Twitter – the user uses Twitter to login and this is where security authentication is implemented. The user’s most recent tweets will also be displayed in the live feed portion of the app.
-2.	IBM Watson Tone Analyzer – the users top 20 tweets will be analyzed and a mood will be generated. Each possible mood will be associated with a specific genre, ex: joy is associated with action. 
+2.	IBM Watson Tone Analyzer – the users mos recent tweets will be analyzed and a mood will be generated. Each possible mood will be associated with a specific genre, ex: joy is associated with action. 
 3.	JustWatch – The JustWatch API takes the mood and pulls one television show and 1 movie from the genre associated with that mood and displays it on the screen
 
 We have implemented a cache that stores a mood and the TV and movie recommendations associated with that mood. So, if the user is feeling the same way in the future, it will bring their recommendations. If the user has already seen these then they can submit their tweets for a new recommendation. The cache will then be updated. 
