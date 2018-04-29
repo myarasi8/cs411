@@ -9,6 +9,4 @@ The app uses the following API’s:
 We have implemented a cache that stores a mood and the TV and movie recommendations associated with that mood. So, if the user is feeling the same way in the future, it will bring their recommendations. If the user has already seen these then they can submit their tweets for a new recommendation. The cache will then be updated. 
 
 Our Web app uses a Flask framework so the entire application is written in Python with HTML and CSS styling. We chose this framework as everyone in the group has a background in Python and due to the fact that Python is synchronous – thus avoiding asynchronous issues. 
-
-/*add info about database*/
-For the back-end our application employs a MySQL database.
+In addition the back-end of our application employs a MySQL relational databse. This is mainly utilized to store movies, tvshows and their related providers, for caching purposes. 
