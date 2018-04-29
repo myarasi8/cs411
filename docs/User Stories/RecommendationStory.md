@@ -7,7 +7,7 @@ Once the user is logged in and has completed set up (refer to ‘Service Set Up�
 
 -As a user, I click the ‘RECOMMEND’ button so that I may see my recommended TV shows. 
 
-Once the user clicks ‘RECOMMEND’ the recommendation tab will display the top 5 TV Shows/Movies that reflect the user’s mood. If the user hasn’t set up their subscriptions properly refer to ‘Service Set Up’ Stories, an error message will appear alerting them to clarify their streaming service(s). A problem that could occur is that the user has already seen these recommendations. In this case, we recommend the user just refresh their page and ask for new recommendations. __A way of keeping track of watched movies will be added later.__ 
+Once the user clicks ‘RECOMMEND’ the recommendation tab will display a TV Shows and a Movies that reflect the user’s mood. If the user hasn’t set up their subscriptions properly refer to ‘Service Set Up’ Stories, an error message will appear alerting them to clarify their streaming service(s). A problem that could occur is that the user has already seen these recommendations. In this case, we recommend the user just refresh their page and ask for new recommendations. __A way of keeping track of watched movies will be added later.__ 
 
 
 ## **Future Directions**
