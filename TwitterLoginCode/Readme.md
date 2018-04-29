@@ -1,4 +1,6 @@
 ## **Twitter Login Code**
 
-This folder contains code regarding logging into Twitter.
+This folder contains preliminary code regarding logging into Twitter.
+
+This is just a prototype.
 
